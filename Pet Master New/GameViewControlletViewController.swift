@@ -111,7 +111,7 @@ class GameViewControlletViewController: UIViewController {
                             UIView.animate(withDuration: 0.3) { [weak self] in
                                 self?.buttons[index].backgroundColor = .red
                             } completion: { [weak self](_) in
-                                self?.buttons[index].backgroundColor = .white
+                                self?.buttons[index].backgroundColor = UIColor(red: 255/255, green: 125/255, blue: 50/255, alpha: 1)
                                 self?.game.items[index].isError = false
                             }
 
@@ -191,7 +191,8 @@ class GameViewControlletViewController: UIViewController {
         alert.addAction(menuAction)
         alert.addAction(cancelActrion)
         
+        alert.popoverPresentationController?.sourceView = self.statusLabel
+        
         present(alert, animated: true, completion: nil)
     }
-    
 }

@@ -40,9 +40,18 @@ class Game{
                     
                     let record = UserDefaults.standard.integer(forKey: KeysUserDefaults.recordGame)
                     
-                    if record == 0 || record > newRecord{
-                        UserDefaults.standard.setValue(newRecord, forKey: KeysUserDefaults.recordGame)
-                        isNewRecord = true
+                    let recordExt = UserDefaults.standard.integer(forKey: KeysUserDefaults.recordExtGame)
+                    
+                    if Settings.shared.currentSettings.extendedMode {
+                        if recordExt == 0 || recordExt > newRecord{
+                            UserDefaults.standard.setValue(newRecord, forKey: KeysUserDefaults.recordExtGame)
+                            isNewRecord = true
+                        }
+                    } else {
+                        if record == 0 || record > newRecord{
+                            UserDefaults.standard.setValue(newRecord, forKey: KeysUserDefaults.recordGame)
+                            isNewRecord = true
+                        }
                     }
                 }
                 stopGame()

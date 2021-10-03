@@ -42,7 +42,13 @@ class GameExtendedViewController: UIViewController {
     }
     
     @IBAction func press_button_1(_ sender: UIButton) {
-        let isRight = game.check2(index: Int(sender.titleLabel!.text!)!)
+        var isRight: Bool = false
+        if Settings.shared.currentSettings.extendedMode {
+            isRight = game.check2(index: Int(sender.titleLabel!.text!)!)
+        } else {
+            guard let buttonIndex = buttons.firstIndex(of: sender) else {return}
+            game.check(index: buttonIndex)
+        }
         
         if isRight {
             sender.alpha = 0
