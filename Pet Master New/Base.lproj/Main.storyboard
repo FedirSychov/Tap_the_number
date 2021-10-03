@@ -23,7 +23,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbo-RL-ufh">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Играть"/>
+                                        <state key="normal" title="Играть 4x4"/>
                                         <connections>
                                             <segue destination="OGy-re-LMn" kind="show" id="9la-Yg-Bdh"/>
                                         </connections>
@@ -31,7 +31,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-qb-p6g">
                                         <rect key="frame" x="0.0" y="72" width="260" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Играть (расширено)"/>
+                                        <state key="normal" title="Играть 5x5"/>
                                         <connections>
                                             <segue destination="0hS-9p-lP9" kind="show" id="Jac-5x-mXy"/>
                                         </connections>
@@ -396,8 +396,40 @@
                         <sections>
                             <tableViewSection id="8hk-S5-CFf">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kYC-27-AlT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Gme-ix-Icp">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="45.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gme-ix-Icp" id="UtU-wE-8Aq">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="45.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расширенный режим" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjL-hD-hTH">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="172" height="21.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uwf-wt-h8h">
+                                                    <rect key="frame" x="357" y="6.9999999999999982" width="51" height="31.333333333333329"/>
+                                                    <connections>
+                                                        <action selector="ModeChanged:" destination="nIx-Pi-0Ls" eventType="valueChanged" id="H0U-7z-rT7"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gjL-hD-hTH" firstAttribute="centerY" secondItem="uwf-wt-h8h" secondAttribute="centerY" id="D5J-d3-YLD"/>
+                                                <constraint firstItem="gjL-hD-hTH" firstAttribute="centerY" secondItem="UtU-wE-8Aq" secondAttribute="centerY" id="NJN-Cd-eQc"/>
+                                                <constraint firstItem="gjL-hD-hTH" firstAttribute="top" secondItem="UtU-wE-8Aq" secondAttribute="top" constant="12" id="eQA-Nk-4iY"/>
+                                                <constraint firstItem="uwf-wt-h8h" firstAttribute="centerY" secondItem="UtU-wE-8Aq" secondAttribute="centerY" id="h2P-Mc-lFb"/>
+                                                <constraint firstAttribute="trailing" secondItem="uwf-wt-h8h" secondAttribute="trailing" constant="22" id="lJf-Cc-BJs"/>
+                                                <constraint firstItem="uwf-wt-h8h" firstAttribute="top" secondItem="UtU-wE-8Aq" secondAttribute="topMargin" constant="-4" id="mK3-ci-lKO"/>
+                                                <constraint firstItem="gjL-hD-hTH" firstAttribute="centerY" secondItem="UtU-wE-8Aq" secondAttribute="centerY" id="oj7-qn-SFv"/>
+                                                <constraint firstItem="gjL-hD-hTH" firstAttribute="leading" secondItem="UtU-wE-8Aq" secondAttribute="leadingMargin" id="rnA-qj-KMl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kYC-27-AlT">
+                                        <rect key="frame" x="0.0" y="89.999998092651367" width="428" height="45.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kYC-27-AlT" id="BEh-OS-pQB">
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="45.333332061767578"/>
@@ -429,7 +461,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="toV-wD-Thr">
-                                        <rect key="frame" x="0.0" y="89.999998092651367" width="428" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="135.33333015441895" width="428" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="toV-wD-Thr" id="8iL-0x-iGl">
                                             <rect key="frame" x="0.0" y="0.0" width="398.33333333333331" height="43.666667938232422"/>
@@ -460,7 +492,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Wsp-Eb-kkv">
-                                        <rect key="frame" x="0.0" y="133.66666603088379" width="428" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="178.99999809265137" width="428" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wsp-Eb-kkv" id="pxa-3a-ivg">
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
@@ -490,6 +522,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Настройки" id="hvf-Im-BU2"/>
                     <connections>
+                        <outlet property="ExtendedMode" destination="uwf-wt-h8h" id="ffl-WU-H0a"/>
                         <outlet property="switchTimer" destination="zzj-vL-hol" id="0q8-Fh-mBd"/>
                         <outlet property="timeLabel" destination="Y5d-m4-6Bo" id="uGB-vC-RmO"/>
                     </connections>
@@ -923,7 +956,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K2D-hm-3aO"/>
+        <segue reference="rVg-jM-Ko3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

@@ -123,13 +123,13 @@
 				7E0F5C31269E42D400D6B57C /* LaunchScreen.storyboard */,
 				7E0F5C34269E42D400D6B57C /* Info.plist */,
 				7EB6612F26A4D061005C0AC9 /* GameViewControlletViewController.swift */,
+				7E3A153C270788A200768377 /* GameExtendedViewController.swift */,
 				7EB8C85F26B2A40B00CAE4A2 /* SelectTimeViewController.swift */,
 				7EB8C86126B2A43A00CAE4A2 /* SettingsTableViewController.swift */,
 				7EB8C86326B3392500CAE4A2 /* Settings.swift */,
 				7ED1E0BC26B886B0000025A9 /* RecordViewController.swift */,
 				7E3A15382707653800768377 /* Design.swift */,
 				7E3A153A270765F900768377 /* MenuViewController.swift */,
-				7E3A153C270788A200768377 /* GameExtendedViewController.swift */,
 			);
 			path = "Pet Master New";
 			sourceTree = "<group>";
@@ -475,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SWP.Pet-Master-New";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWP.Tap-the-number";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -494,7 +494,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SWP.Pet-Master-New";
+				PRODUCT_BUNDLE_IDENTIFIER = "SWP.Tap-the-number";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

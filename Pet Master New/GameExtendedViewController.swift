@@ -16,7 +16,8 @@ class GameExtendedViewController: UIViewController {
     @IBOutlet weak var newGameButton: UIButton!
     
     @IBAction func NewGame(_ sender: UIButton) {
-        game.NewGame()
+        game.NewGame2()
+        GameViewControlletViewController.indecesArr = []
         sender.isEnabled = false
         sender.alpha = 0
         setupScreen()
@@ -24,6 +25,7 @@ class GameExtendedViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        GameViewControlletViewController.indecesArr = []
         game.stopGame()
     }
     
@@ -40,8 +42,11 @@ class GameExtendedViewController: UIViewController {
     }
     
     @IBAction func press_button_1(_ sender: UIButton) {
-        guard let buttonIndex = buttons.firstIndex(of: sender) else {return}
-        game.check(index: buttonIndex)
+        let isRight = game.check2(index: Int(sender.titleLabel!.text!)!)
+        
+        if isRight {
+            sender.alpha = 0
+        }
         
         updateUI()
     }
@@ -49,41 +54,48 @@ class GameExtendedViewController: UIViewController {
     private func setupScreen(){
         for item in buttons {
             Design.SetupPlayButton(button: item)
-        }
-        
-        //game.setupGame()
-        var tempArr: [Int] = []
-        for i in 0...game.items.count - 1 {
-            tempArr.append(i)
+            item.alpha = 1
         }
 
-        for index in game.items.indices{
-            buttons[index].setTitle(game.items[index].title, for: .normal)
-            buttons[index].alpha = 1
+        for index in game.items.indices {
+            GameViewControlletViewController.indecesArr.append(index)
+        }
+        GameViewControlletViewController.indecesArr.shuffle()
+        
+        for index in 0...buttons.count-1 {
+            buttons[index].setTitle(game.items[GameViewControlletViewController.indecesArr[index]].title, for: .normal)
             buttons[index].isEnabled = true
         }
         nextDigit.text = game.nextItem?.title
     }
     
-    private func setupScreenBase() {
-        
+    private func findButton(index: Int) -> Int {
+        var i: Int = 0
+        for j in self.buttons {
+            if j.titleLabel!.text! == String(index) {
+                return i
+            } else {
+                i += 1
+            }
+        }
+        return 0
     }
     
     private func updateUI(){
         for index in game.items.indices{
-            //buttons[index].isHidden = game.items[index].isFound
-            buttons[index].alpha = game.items[index].isFound ? 0 : 1
-            buttons[index].isEnabled = !game.items[index].isFound
+            let tempIndex = findButton(index: index)
+            buttons[tempIndex].isEnabled = !game.items[index].isFound
             if game.items[index].isError{
                 UIView.animate(withDuration: 0.3) { [weak self] in
-                    self?.buttons[index].backgroundColor = .red
+                    self?.buttons[tempIndex].backgroundColor = .red
                 } completion: { [weak self](_) in
-                    self?.buttons[index].backgroundColor = .white
+                    self?.buttons[tempIndex].backgroundColor = UIColor(red: 255/255, green: 125/255, blue: 50/255, alpha: 1)
                     self?.game.items[index].isError = false
                 }
 
             }
         }
+        
         nextDigit.text = game.nextItem?.title
         
         updateInfoGame(with: game.status)
@@ -97,11 +109,9 @@ class GameExtendedViewController: UIViewController {
             newGameButton.isHidden = true
         case .win:
             statusLabel.text = "Вы победили!"
-            statusLabel.textColor = .green
+            statusLabel.textColor = .black
             newGameButton.isHidden = false
-            if game.isNewRecord{
-                showAlertActionSheet()
-            }
+            showAlertActionSheet()
         case .loose:
             statusLabel.text = "Вы проиграли!"
             statusLabel.textColor = .red
@@ -124,7 +134,8 @@ class GameExtendedViewController: UIViewController {
         let alert = UIAlertController(title: "Что вы хотите сделать?", message: nil, preferredStyle: .actionSheet)
         
         let newGameActoin = UIAlertAction(title: "Начать новую игру", style: .default) { [weak self] (_) in
-            self?.game.NewGame()
+            self?.game.NewGame2()
+            GameViewControlletViewController.indecesArr = []
             self?.setupScreen()
         }
         

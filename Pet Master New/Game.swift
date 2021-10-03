@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum StatusGame{
     case start
@@ -33,7 +34,7 @@ class Game{
     
     var status: StatusGame = .start{
         didSet{
-            if status != .start{
+            if status != .start && Settings.shared.currentSettings.timerState{
                 if status == .win{
                     let newRecord = TimeForGame - SecondsGame
                     
@@ -67,7 +68,11 @@ class Game{
         self.TimeForGame = Settings.shared.currentSettings.TimeForGame
         self.SecondsGame = self.TimeForGame
         self.updateTimer = updateTimer
-        setupGame()
+        if Settings.shared.currentSettings.extendedMode {
+            setupGame()
+        } else {
+            setupGame2()
+        }
     }
     
     func setupGame(){
@@ -92,27 +97,90 @@ class Game{
         
     }
     
+    func setupGame2(){
+        isNewRecord = false
+        
+        var digits = data
+        
+        items.removeAll()
+        while items.count < countItems{
+            let item = Item(title: String(digits.removeFirst()))
+            items.append(item)
+        }
+        
+        nextItem = items[0]
+        
+        updateTimer(status, SecondsGame)
+        if Settings.shared.currentSettings.timerState{
+            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self](_) in
+                self?.SecondsGame -= 1
+            })
+        }
+        
+    }
+    
     func NewGame(){
         status = .start
         self.SecondsGame = TimeForGame
         setupGame()
     }
     
+    func NewGame2(){
+        status = .start
+        self.SecondsGame = TimeForGame
+        setupGame2()
+    }
+    
+    func findItem(item: Int) -> Int {
+        var i: Int = 0
+        for j in items {
+            if j.title == String(item) {
+                return i
+            } else {
+                i += 1
+            }
+        }
+        return 0
+    }
+    
     func check(index: Int){
-        guard status == .start else {return}
-        
-        if items[index].title == nextItem?.title{
-            items[index].isFound = true
+            guard status == .start else {return}
             
-        nextItem = items.shuffled().first(where: {(item) -> Bool in item.isFound == false})
+            if items[index].title == nextItem?.title{
+                items[index].isFound = true
+                
+            nextItem = items.shuffled().first(where: {(item) -> Bool in item.isFound == false})
+                
+            } else {
+                items[index].isError = true
+            }
+            
+            if nextItem == nil{
+                status = .win
+            }
+        }
+    
+    func check2(index: Int) -> Bool {
+        guard status == .start else {return false}
+        var result: Bool
+        //if items[index].title == nextItem?.title{
+
+        if String(index) == nextItem?.title{
+            result = true
+            items[findItem(item: index)].isFound = true
+            //TODO: - Change this
+            nextItem = items.first(where: {(item) -> Bool in item.isFound == false})
+            //nextItem = items.shuffled().first(where: {(item) -> Bool in item.isFound == false})
             
         } else {
+            result = false
             items[index].isError = true
         }
         
         if nextItem == nil{
             status = .win
         }
+        return result
     }
     
     func stopGame(){

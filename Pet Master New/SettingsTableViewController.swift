@@ -11,11 +11,16 @@ class SettingsTableViewController: UITableViewController {
 
     @IBOutlet weak var switchTimer: UISwitch!
     
+    @IBOutlet weak var ExtendedMode: UISwitch!
+    
     @IBOutlet weak var timeLabel: UILabel!
+    
+    @IBAction func ModeChanged(_ sender: Any) {
+        Settings.shared.currentSettings.extendedMode = self.ExtendedMode.isOn
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     @IBAction func ChangeTimerState(_ sender: UISwitch) {
@@ -35,6 +40,7 @@ class SettingsTableViewController: UITableViewController {
     func loadSettings(){
         timeLabel.text = "\(Settings.shared.currentSettings.TimeForGame) сек"
         switchTimer.isOn = Settings.shared.currentSettings.timerState
+        ExtendedMode.isOn = Settings.shared.currentSettings.extendedMode
     }
     
     // MARK: - Table view data source
