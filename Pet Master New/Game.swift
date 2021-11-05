@@ -183,7 +183,7 @@ class Game{
             
         } else {
             result = false
-            items[index].isError = true
+            items[findItem(item: index)].isError = true
         }
         
         if nextItem == nil{

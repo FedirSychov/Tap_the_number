@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Pet Master New
+
+  Created by Fedor Sychev on 05.10.2021.
+  
+*/
+
+"no_record" = "No record";
+"record" = "Your record - ";
+"sec" = "sec";
+"game_started" = "The game has begun!";
+"you_won" = "You won!";
+"you_loose" = "You lose!";
+"congratulations" = "Congratulations!";
+"new_record" = "You have set a new record";
+"what_do_you_want" = "What do you want to do?";
+"new_game" = "New game";
+"show_record" = "Show record";
+"back_to_menu" = "Back to menu";
+"cancel" = "Cancel";
+"reset_record" = "Reset Record";

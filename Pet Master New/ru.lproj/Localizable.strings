@@ -1,0 +1,22 @@
+/*
+  Localizable.strings
+  Pet Master New
+
+  Created by Fedor Sychev on 05.10.2021.
+  
+*/
+
+"no_record" = "Рекорд не установлен";
+"record" = "Ваш рекорд - ";
+"sec" = "сек";
+"game_started" = "Игра началась";
+"you_won" = "Вы победили!";
+"you_loose" = "Вы проиграли!";
+"congratulations" = "Поздравляем!";
+"new_record" = "Вы установили новый рекорд";
+"what_do_you_want" = "Что вы хотите сделать?";
+"new_game" = "Начать новую игру";
+"show_record" = "Посмотреть рекорд";
+"back_to_menu" = "Перейти в меню";
+"cancel" = "Отмена";
+"reset_record" = "Обнулить рекорды";

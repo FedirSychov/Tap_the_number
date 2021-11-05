@@ -1,0 +1,195 @@
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "1Ox-OZ-EGQ"; */
+"1Ox-OZ-EGQ.normalTitle" = "9";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "1ZN-L9-KQD"; */
+"1ZN-L9-KQD.title" = "Назад";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "1kd-nm-gy7"; */
+"1kd-nm-gy7.normalTitle" = "7";
+
+/* Class = "UIButton"; normalTitle = "Рекорд"; ObjectID = "1wT-n7-UBE"; */
+"1wT-n7-UBE.normalTitle" = "Рекорд";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "32I-0U-eA8"; */
+"32I-0U-eA8.normalTitle" = "6";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "3oc-Pm-mrf"; */
+"3oc-Pm-mrf.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "4Fw-Iw-oYT"; */
+"4Fw-Iw-oYT.normalTitle" = "4";
+
+/* Class = "UILabel"; text = "Таймер"; ObjectID = "6cT-QC-SXT"; */
+"6cT-QC-SXT.text" = "Таймер";
+
+/* Class = "UIButton"; normalTitle = "16"; ObjectID = "8rb-p9-KxW"; */
+"8rb-p9-KxW.normalTitle" = "16";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "9Wl-xG-fOT"; */
+"9Wl-xG-fOT.normalTitle" = "8";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "9qJ-Ql-k8N"; */
+"9qJ-Ql-k8N.normalTitle" = "8";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "BuI-8s-Tg1"; */
+"BuI-8s-Tg1.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "15"; ObjectID = "Bxr-gQ-IIm"; */
+"Bxr-gQ-IIm.normalTitle" = "15";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "Byw-6u-Iwq"; */
+"Byw-6u-Iwq.normalTitle" = "3";
+
+/* Class = "UIButton"; normalTitle = "13"; ObjectID = "D98-Jd-pZP"; */
+"D98-Jd-pZP.normalTitle" = "13";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "F25-ZE-ecU"; */
+"F25-ZE-ecU.normalTitle" = "8";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "F67-dw-kzd"; */
+"F67-dw-kzd.normalTitle" = "5";
+
+/* Class = "UIButton"; normalTitle = "12"; ObjectID = "FeO-rW-7YE"; */
+"FeO-rW-7YE.normalTitle" = "12";
+
+/* Class = "UILabel"; text = "Время игры"; ObjectID = "L9U-kh-Nb2"; */
+"L9U-kh-Nb2.text" = "Время игры";
+
+/* Class = "UIButton"; normalTitle = "10"; ObjectID = "LGF-ga-xOc"; */
+"LGF-ga-xOc.normalTitle" = "10";
+
+/* Class = "UIButton"; normalTitle = "12"; ObjectID = "LN0-yJ-Dyw"; */
+"LN0-yJ-Dyw.normalTitle" = "12";
+
+/* Class = "UIButton"; normalTitle = "13"; ObjectID = "O8g-lE-3xP"; */
+"O8g-lE-3xP.normalTitle" = "13";
+
+/* Class = "UIButton"; normalTitle = "14"; ObjectID = "P6a-la-lFn"; */
+"P6a-la-lFn.normalTitle" = "14";
+
+/* Class = "UIButton"; normalTitle = "15"; ObjectID = "PwN-uY-cmQ"; */
+"PwN-uY-cmQ.normalTitle" = "15";
+
+/* Class = "UINavigationItem"; title = "Рекорд"; ObjectID = "Qs0-SK-dmm"; */
+"Qs0-SK-dmm.title" = "Рекорд";
+
+/* Class = "UIButton"; normalTitle = "14"; ObjectID = "SGN-LS-sfW"; */
+"SGN-LS-sfW.normalTitle" = "14";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "T1h-wy-po9"; */
+"T1h-wy-po9.normalTitle" = "5";
+
+/* Class = "UIButton"; normalTitle = "16"; ObjectID = "Tjl-hT-VMj"; */
+"Tjl-hT-VMj.normalTitle" = "16";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "UJZ-hR-dL0"; */
+"UJZ-hR-dL0.normalTitle" = "9";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "UJg-MJ-Ye1"; */
+"UJg-MJ-Ye1.normalTitle" = "2";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "Ua5-u7-PQN"; */
+"Ua5-u7-PQN.normalTitle" = "2";
+
+/* Class = "UIButton"; normalTitle = "10"; ObjectID = "WIE-hr-55o"; */
+"WIE-hr-55o.normalTitle" = "10";
+
+/* Class = "UILabel"; text = "30 сек"; ObjectID = "Y5d-m4-6Bo"; */
+"Y5d-m4-6Bo.text" = "30 сек";
+
+/* Class = "UILabel"; text = "Игра началась"; ObjectID = "YLr-m5-giP"; */
+"YLr-m5-giP.text" = "Игра началась";
+
+/* Class = "UIButton"; normalTitle = "Настройки по умолчанию"; ObjectID = "Z3r-Or-GFn"; */
+"Z3r-Or-GFn.normalTitle" = "Настройки по умолчанию";
+
+/* Class = "UILabel"; text = "Обычный режим:"; ObjectID = "am5-am-2Nr"; */
+"am5-am-2Nr.text" = "Обычный режим:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bfi-BZ-s5w"; */
+"bfi-BZ-s5w.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "16"; ObjectID = "c0Y-AL-P3K"; */
+"c0Y-AL-P3K.normalTitle" = "16";
+
+/* Class = "UIButton"; normalTitle = "16"; ObjectID = "dSU-Tu-dtS"; */
+"dSU-Tu-dtS.normalTitle" = "16";
+
+/* Class = "UIButton"; normalTitle = "15"; ObjectID = "dwu-vD-haD"; */
+"dwu-vD-haD.normalTitle" = "15";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eNS-zP-xYm"; */
+"eNS-zP-xYm.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "14"; ObjectID = "gW3-lI-VEm"; */
+"gW3-lI-VEm.normalTitle" = "14";
+
+/* Class = "UILabel"; text = "Расширенный режим"; ObjectID = "gjL-hD-hTH"; */
+"gjL-hD-hTH.text" = "Расширенный режим";
+
+/* Class = "UILabel"; text = "Расширенный режим:"; ObjectID = "gpF-Fj-gzO"; */
+"gpF-Fj-gzO.text" = "Расширенный режим:";
+
+/* Class = "UIButton"; normalTitle = "11"; ObjectID = "ha1-Nz-hlh"; */
+"ha1-Nz-hlh.normalTitle" = "11";
+
+/* Class = "UIButton"; normalTitle = "Играть 4x4"; ObjectID = "hbo-RL-ufh"; */
+"hbo-RL-ufh.normalTitle" = "Играть 4x4";
+
+/* Class = "UINavigationItem"; title = "Настройки"; ObjectID = "hvf-Im-BU2"; */
+"hvf-Im-BU2.title" = "Настройки";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "kXS-Cy-6Sf"; */
+"kXS-Cy-6Sf.normalTitle" = "4";
+
+/* Class = "UILabel"; text = "Игра началась"; ObjectID = "ko5-pJ-DQg"; */
+"ko5-pJ-DQg.text" = "Игра началась";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "lG3-IC-mc1"; */
+"lG3-IC-mc1.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "leK-11-b66"; */
+"leK-11-b66.normalTitle" = "1";
+
+/* Class = "UIButton"; normalTitle = "16"; ObjectID = "lh7-d8-tiB"; */
+"lh7-d8-tiB.normalTitle" = "16";
+
+/* Class = "UIButton"; normalTitle = "Настройки"; ObjectID = "lpT-WN-gZ0"; */
+"lpT-WN-gZ0.normalTitle" = "Настройки";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "mgE-CI-YfR"; */
+"mgE-CI-YfR.normalTitle" = "4";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "oVL-O0-vtv"; */
+"oVL-O0-vtv.normalTitle" = "6";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "p3H-ZX-rQ2"; */
+"p3H-ZX-rQ2.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Играть 5x5"; ObjectID = "q2e-qb-p6g"; */
+"q2e-qb-p6g.normalTitle" = "Играть 5x5";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "q66-rI-gGc"; */
+"q66-rI-gGc.normalTitle" = "7";
+
+/* Class = "UIButton"; normalTitle = "11"; ObjectID = "rib-u5-ZfV"; */
+"rib-u5-ZfV.normalTitle" = "11";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "skX-LV-Eqw"; */
+"skX-LV-Eqw.normalTitle" = "3";
+
+/* Class = "UINavigationItem"; title = "Меню"; ObjectID = "vHu-EX-ooM"; */
+"vHu-EX-ooM.title" = "Меню";
+
+/* Class = "UIButton"; normalTitle = "12"; ObjectID = "w6f-IA-e6x"; */
+"w6f-IA-e6x.normalTitle" = "12";
+
+/* Class = "UIButton"; normalTitle = "Новая игра"; ObjectID = "wTp-Fk-Hzd"; */
+"wTp-Fk-Hzd.normalTitle" = "Новая игра";
+
+/* Class = "UIButton"; normalTitle = "13"; ObjectID = "xaj-zd-VHq"; */
+"xaj-zd-VHq.normalTitle" = "13";
+
+/* Class = "UIButton"; normalTitle = "Новая игра"; ObjectID = "yjR-e5-Isw"; */
+"yjR-e5-Isw.normalTitle" = "Новая игра";
